@@ -6,7 +6,11 @@ export default function Workout(props) {
   const { workout } = props;
 
   return (
-    <SectionWrapper title={["The", "Danger", "Zone"]} header={"Welcome To"}>
+    <SectionWrapper
+      id={"workout"}
+      title={["The", "Danger", "Zone"]}
+      header={"Welcome To"}
+    >
       {workout.map((exercise, i) => {
         return <ExerciseCard index={i} key={i} exercise={exercise} />;
       })}
